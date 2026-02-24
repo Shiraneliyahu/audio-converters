@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>Audio Converters</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎛️ מחשבוני אודיו</h1>
+
+  <section>
+    <h2>⏱️ המרה בין ms ⇄ meters</h2>
+    <input type="number" id="msInput" placeholder="ms" />
+    <button onclick="msToMeters()">ms ➜ meters</button>
+    <input type="number" id="metersInput" placeholder="meters" />
+    <button onclick="metersToMs()">meters ➜ ms</button>
+    <p id="msMetersResult"></p>
+  </section>
+
+  <section>
+    <h2>🔊 מחשבון יחסי dB</h2>
+    <input type="number" id="dbInput" placeholder="dB" />
+    <button onclick="dbToRatio()">המרה ליחס</button>
+    <p id="dbResult"></p>
+  </section>
+
+  <section>
+    <h2>🌊 אורך גל לפי Hz</h2>
+    <input type="number" id="hzInput" placeholder="Hz" />
+    <button onclick="hzToWavelength()">חשב אורך גל (מטרים)</button>
+    <p id="hzResult"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
